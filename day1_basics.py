@@ -43,14 +43,3 @@ users = ["admin", "john", "alice"]
 for user in users:
     print(f"Checking user: {user}")
 
-users = [
-    {"username": "admin", "failed_attempts": 5},
-    {"username": "john", "failed_attempts": 1},
-    {"username": "alice", "failed_attempts": 0}
-]
-
-for user in users:
-    if user["failed_attempts"] >= 3:
-        print(f"User {user['username']} is locked")
-    else:
-        print(f"User {user['username']} is allowed")
